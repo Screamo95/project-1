@@ -1,0 +1,19 @@
+@font-face {
+  font-family: os_regular;
+  src: url(../Fonts/OpenSans-Regular.woff);
+}
+
+@font-face {
+  font-family: oswald_bold;
+  src: url(../Fonts/Oswald-Bold.woff);
+}
+
+@font-face {
+  font-family: oswald_medium;
+  src: url(../Fonts/Oswald-Medium.woff);
+}
+
+@font-face {
+  font-family: oswald_regular;
+  src: url(../Fonts/Oswald-Regular.woff);
+}
