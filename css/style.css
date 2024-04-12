@@ -152,7 +152,7 @@
 .project {
   padding-top: 259px;
   background-color: var(--bg_color);
-  padding-bottom: 125px;
+  padding-bottom: 123px;
 }
 .project__title {
   color: var(--dark_color);
@@ -189,4 +189,53 @@
 .project__item-text {
   color: #999999;
   line-height: 136%;
+}
+
+/* Quest */
+
+.quest {
+  background-color: var(--accent_color);
+  padding: 40px 0 41px;
+}
+.quest__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quest__text-title {
+  font-family: oswald_bold;
+  font-size: 48px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 9px;
+}
+.quest__text-subtitle {
+  font-family: oswald_bold;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-transform: uppercase;
+}
+.quest__button {
+  cursor: pointer;
+  width: 175px;
+  height: 49px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.quest__button-img {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+}
+.quest__button-span {
+  font-family: oswald_medium;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
