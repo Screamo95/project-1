@@ -1,7 +1,7 @@
 @import url(reset.css);
 @import url(fonts.css);
 
-/* Global */
+                                                               /* Global */
 
 * {
   box-sizing: border-box;
@@ -78,7 +78,7 @@
   }
 }
 
-/* Header */
+                                                               /* Header */
 
 .header {
   background-image: url(../img/header_bg.jpg);
@@ -143,7 +143,7 @@
   }
 }
 
-/* about */
+                                                                  /* about */
 
 .about {
   position: relative;
@@ -228,7 +228,7 @@
   }
 }
 
-/* project */
+                                                           /* project */
 
 .project {
   padding-top: 259px;
@@ -306,7 +306,7 @@
   }
 }
 
-/* Quest */
+                                                                 /* Quest */
 
 .quest {
   background-color: var(--accent_color);
@@ -393,7 +393,7 @@
   }
 }
 
-/* services */
+                                                                   /* services */
 
 .services {
   background-color: var(--bg_color);
@@ -469,11 +469,11 @@
   }
 }
 
-/* Question */
+                                                                    /* Question */
 
 .question {
   background-color: var(--bg_color);
-  padding: 159px 0 123px;
+  padding: 159px 0 121px;
 }
 .question__title {
   color: #000;
@@ -530,5 +530,60 @@
 @media screen and (max-width: 370px) {
   .question__item-name {
     font-size: 20px;
+  }
+}
+
+                                                                 /* Partners */
+
+.partners {
+  padding-top: 110px;
+  padding-bottom: 97px;
+  background-color: var(--dark_color);
+}
+.partners__title {
+  color: var(--white_color);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 59px;
+}
+.partners__body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 64px;
+}
+.partners__item {
+}
+.partners__item-img {
+}
+
+@media screen and (max-width: 1200px) {
+  .partners__body {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .partners__body {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .partners__body {
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .partners__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .partners__body {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
