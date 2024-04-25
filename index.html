@@ -3,29 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <link rel="stylesheet" href="css/style.css">
   <title>Project 1</title>
 </head>
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="global__container">
       <div class="header__nav">
         <img src="img/header_logo.svg" alt="Логотип" class="header__logo">
-        <div class="header__burger">
+        <a class="header__burger sidenav-trigger" href="#" data-target="slide-out">
           <span class="header__burger_line"></span>
           <span class="header__burger_line"></span>
           <span class="header__burger_line"></span>
-        </div>
+        </a>
       </div>
       <h2 class="header__title">Реализуем крупнейшие проекты в России</h2>
       <h4 class="header__subtitle">Стадионы, газопроводы, мосты, дамбы</h4>
     </div>
+    <!-- Sidenav  -->
+    <ul id="slide-out" class="sidenav">
+      <li><a class="waves-effect" href="#project"><i class="material-icons">location_city</i>Project</a></li>
+      <li><a class="waves-effect" href="#services"><i class="material-icons">build</i>Services</a></li>
+      <li><a class="waves-effect" href="#question"><i class="material-icons">live_help</i>Question</a></li>
+      <li><a class="waves-effect" href="#reviews"><i class="material-icons">info_outline</i>Reviews</a></li>
+      <li><a class="waves-effect" href="#contacts"><i class="material-icons">perm_contact_calendar</i>Contacts</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть</a></li>
+    </ul>
   </header>
 
   <section class="about">
     <div class="about__info">
-      <div class="container">
+      <div class="global__container">
         <div class="about__grid">
           <div class="about__grid-item">
             <span class="about__grid-number">26</span>
@@ -61,8 +73,8 @@
   </section>
 
   <section class="project">
-    <div class="container">
-      <h2 class="project__title h2">Наши самые большие проекты</h2>
+    <div class="global__container">
+      <h2 class="project__title h2" id="project">Наши самые большие проекты</h2>
       <div class="project__body">
         <div class="project__item">
           <img src="img/project_item.jpg" alt="Стадион" class="project__item-img">
@@ -87,24 +99,37 @@
   </section>
 
   <section class="quest">
-    <div class="container">
+    <div class="global__container">
       <div class="quest__body">
         <div class="quest__text">
           <span class="quest__text-title">Самые умные проекты</span>
           <br>
           <span class="quest__text-subtitle">Реализуем самые смелые решения в России!</span>
         </div>
-        <div class="quest__button">
+        <a class="quest__button modal-trigger" href="#modal1">
           <img src="img/quest_svg.svg" alt="Почта" class="quest__button-img">
           <span class="quest__button-span">Ваш запрос</span>
-        </div>
+        </a>
+      </div>
+    </div>
+    <!-- Modal  -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4 style="font-size: 25px; text-transform: uppercase;">Хотите работать с нами?</h4>
+        <br>
+        <p>Вы можете связаться с нами по телефону или отправить сообщение на нашу почту!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="tel:+78121112233" class="modal-close waves-effect waves-green btn-flat">Позвонить</a>
+        <a href="mailto:Info@vip.ru" class="modal-close waves-effect waves-green btn-flat">Написать</a>
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Закрыть</a>
       </div>
     </div>
   </section>
 
   <section class="services">
-    <div class="container">
-      <h2 class="services__title h2">Чем мы занимаемся?</h2>
+    <div class="global__container">
+      <h2 class="services__title h2" id="services">Чем мы занимаемся?</h2>
       <div class="services__body">
         <div class="services__item">
           <img src="img/services_icon.svg" alt="Дом" class="services__item-img">
@@ -142,19 +167,19 @@
 
   <section class="portfolio">
     <div class="portfolio__body">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
-      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
+      <img src="img/portfolio_img.jpg" alt="Портфолио" class="portfolio__body-img materialboxed">
     </div>
   </section>
 
-  <section class="question">
-    <div class="container">
+  <section class="question" id="question">
+    <div class="global__container">
       <h2 class="question__title h2">Ответы на вопросы</h2>
       <div class="question__body">
         <div class="question__item">
@@ -190,7 +215,7 @@
   </section>
 
   <section class="partners">
-    <div class="container">
+    <div class="global__container">
       <h2 class="partners__title h2">Наши партнеры</h2>
       <div class="partners__body">
         <div class="partners__item">
@@ -212,8 +237,8 @@
     </div>
   </section>
 
-  <section class="reviews">
-    <div class="container">
+  <section class="reviews" id="reviews">
+    <div class="global__container">
       <h2 class="reviews__title h2">Отзывы о работе с нами</h2>
       <div class="reviews__body">
         <div class="reviews__item">
@@ -242,14 +267,14 @@
   </section>
 
   <section class="quest">
-    <div class="container">
+    <div class="global__container">
       <div class="quest__body">
         <div class="quest__text">
           <span class="quest__text-title">Хотите с нами работать?</span>
           <br>
           <span class="quest__text-subtitle">Оставьте заявку и мы свяжемся с вами!</span>
         </div>
-        <div class="quest__button">
+        <div class="quest__button modal-trigger" href="#modal1">
           <img src="img/quest_svg.svg" alt="Почта" class="quest__button-img">
           <span class="quest__button-span">Ваш запрос</span>
         </div>
@@ -257,8 +282,8 @@
     </div>
   </section>
 
-  <section class="contacts">
-    <div class="container">
+  <section class="contacts" id="contacts">
+    <div class="global__container">
       <h2 class="contacts__title h2">Контакты</h2>
       <div class="contacts__body">
         <div class="contacts__item">
@@ -273,7 +298,11 @@
             <img src="img/contacts_phone.svg" alt="Phone">
           </div>
           <h3 class="contacts__item-h3 h3">Телефон:</h3>
-          <h3 class="contacts__item-text h3">8 (812) 111-22-33<br>8 (812) 111-22-33</h3>
+          <h3 class="contacts__item-text h3">
+            <a href="tel:+78121112233">8 (812) 111-22-33</a>
+            <br>
+            <a href="tel:+78121112233">8 (812) 111-22-33</a>
+          </h3>
         </div>
         <div class="contacts__item">
           <div class="contacts__item-img">
@@ -287,14 +316,16 @@
             <img src="img/contacts_mail.svg" alt="Mail">
           </div>
           <h3 class="contacts__item-h3 h3">E-mail:</h3>
-          <h3 class="contacts__item-text h3">Info@vip.ru</h3>
+          <h3 class="contacts__item-text h3">
+            <a href="mailto:Info@vip.ru">Info@vip.ru</a>
+          </h3>
         </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
+    <div class="global__container">
       <div class="footer__body">
         <span class="footer__span p">&copy; 2024 Строительная компания</span>
         <span class="footer__span p">Разработано лучшей студией</span>
@@ -302,6 +333,7 @@
     </div>
   </footer>
 
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
